@@ -112,6 +112,9 @@ public class AuthorizationCodeFlow {
   /** Refresh listeners provided by the client. */
   private final Collection<CredentialRefreshListener> refreshListeners;
 
+  /** Additional parameters to pass to authorization url. */
+  private final Map<String, String> additionalParameters;
+
   /**
    * @param method method of presenting the access token to the resource server (for example {@link
    *     BearerToken#authorizationHeaderAccessMethod})
